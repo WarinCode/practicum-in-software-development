@@ -1,0 +1,35 @@
+@font-face {
+  font-family: Itim;
+  src: url("../fonts/Itim-Regular.ttf");
+}
+
+body {
+  font-family: Itim, sans-serif;
+}
+
+.container {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  > .menu {
+    flex: 1 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+a:is(:visited, :link) {
+  color: blue;
+  text-decoration: none;
+  transition: color 200ms ease-in-out;
+
+  &:hover {
+    color: green;
+  }
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+}
