@@ -1,0 +1,238 @@
+@import url("./animations.css");
+
+:root {
+    --primary: #18ac70;
+    --secondary: #2c3434;
+    --tertiary: #9b9b9b;
+    --shadow: #dbdbdbe5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+
+    &::selection {
+        color: var(--primary);
+        background: var(--secondary);
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a:is(:link, :visited) {
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+.container {
+    display: none;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: stretch;
+    animation: fade 1600ms ease-in-out 1;
+
+    .side-bar {
+        width: 20%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+        background: var(--secondary);
+        color: var(--tertiary);
+        position: relative;
+
+        .user-profile {
+            width: 100%;
+            display: inherit;
+            flex-direction: inherit;
+            align-items: inherit;
+
+            img[alt="user-img"] {
+                width: 120px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 50%;
+                border: 7px solid #ffffff1a;
+            }
+
+            .user-details {
+                margin-top: 12px;
+                text-align: center;
+                 
+                p {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: var(--primary);
+                }
+            }
+
+            .end-line {
+                width: 80%;
+                height: 1px;
+                background: #ffffff42;
+                margin-top: 10px;
+            }
+        }
+
+        .menu {
+            width: 100%;
+            list-style-type: none;
+            margin-top: 20px;
+            overflow: hidden;
+
+            .menu-item {
+                cursor: pointer;
+                width: inherit;
+                margin-block: 10px;
+                height: 50px;
+                transition: background 300ms ease-in-out;
+                user-select: none;
+
+                a {
+                    display: block;
+                    width: inherit;
+                    height: inherit;
+                    transition: color 300ms ease-in-out;
+                    transform: translate(30px, 12px);
+                }
+
+                &:hover {
+                    >a {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        >footer {
+            position: absolute;
+            text-align: center;
+            font-size: 12px;
+            font-weight: lighter;
+            bottom: 2%;
+        }
+    }
+
+    .content {
+        width: 80%;
+        padding: 60px;
+        background-color: aliceblue;
+
+        #about,
+        #graduation,
+        #contact,
+        #hobby {
+            width: 100%;
+            height: max-content;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            box-shadow: 0 15px 20px 3px var(--shadow);
+            border-radius: 7px;
+
+            .line {
+                background: var(--secondary);
+                opacity: 20%;
+                width: 100%;
+                height: 1.2px;
+                margin-block: 5px 20px;
+            }
+
+            div {
+                &:nth-child(3) {
+                    line-height: 35px;
+                }
+            }
+        }
+
+        & :where(#graduation, #hobby, #contact){
+            margin-top: 60px;
+        }
+
+        #graduation {
+            .line {
+                margin-bottom: 40px;
+            }
+
+            .line + div {
+                width: 100%;
+                padding-inline: 40px;
+
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content:start;
+                    margin-block: 30px;
+                    cursor: default;
+                    
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        object-fit: contain;   
+                        transition: scale 300ms ease-in-out, filter 300ms ease-in-out;
+                    }
+                    
+                    &:hover{
+                        img {
+                            scale: 110%;
+                            filter: drop-shadow(0 0 30px var(--shadow));
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        margin-left: 80px;
+                    }
+                }
+            }
+        }
+
+        #contact {
+            div {
+                &:nth-child(3){
+                    p a {
+                        color: black;
+                        transition: color 300ms ease-in-out;
+
+                        &:hover{
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+span {
+    font-weight: bold;
+}
+
+#active {
+    background: var(--primary);
+
+    > a {
+        color: white;
+    }
+}
+
+.loading {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    img[alt="KU-logo"] {
+        height: 200px;
+        width: 200px;
+        animation: ku-animation 1.2s ease-in-out 3;
+    }
+}

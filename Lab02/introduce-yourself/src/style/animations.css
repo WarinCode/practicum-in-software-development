@@ -1,0 +1,36 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes ku-animation {
+    0% {
+        scale: 100%;
+    }
+
+    20% {
+        scale: 130%;
+    }
+
+    40% {
+        scale: 80%;
+    }
+
+    60% {
+        scale: 60%;
+    }
+
+    60% {
+        scale: 120%;
+    }
+
+    100% {
+        scale: 100%;
+    }
+}
