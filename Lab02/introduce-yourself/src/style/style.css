@@ -61,11 +61,12 @@ a:is(:link, :visited) {
                 border: 7px solid #ffffff1a;
             }
 
-            .user-details {
+            .user-name {
                 margin-top: 12px;
                 text-align: center;
-                 
+
                 p {
+                    width: 100%;
                     font-size: 16px;
                     font-weight: bold;
                     color: var(--primary);
@@ -115,7 +116,7 @@ a:is(:link, :visited) {
             text-align: center;
             font-size: 12px;
             font-weight: lighter;
-            bottom: 2%;
+            bottom: .3%;
         }
     }
 
@@ -127,7 +128,8 @@ a:is(:link, :visited) {
         #about,
         #graduation,
         #contact,
-        #hobby {
+        #hobby,
+        #performance {
             width: 100%;
             height: max-content;
             background-color: rgba(255, 255, 255, 0.5);
@@ -142,16 +144,31 @@ a:is(:link, :visited) {
                 height: 1.2px;
                 margin-block: 5px 20px;
             }
-
-            div {
-                &:nth-child(3) {
-                    line-height: 35px;
-                }
-            }
         }
 
-        & :where(#graduation, #hobby, #contact){
+        & :where(#graduation, #hobby, #contact, #performance) {
             margin-top: 60px;
+        }
+
+        #about {
+            .user-details {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-between;
+
+                .user-info {
+                    line-height: 40px;
+                }
+            
+                img[alt="user-img2"]{
+                    width: 250px;
+                    height: 100%;
+                    border-radius: 12px;
+                    object-fit: cover;
+                    box-shadow: 0 0 12px 5px var(--shadow);
+                }
+            }
         }
 
         #graduation {
@@ -159,7 +176,7 @@ a:is(:link, :visited) {
                 margin-bottom: 40px;
             }
 
-            .line + div {
+            .line+div {
                 width: 100%;
                 padding-inline: 40px;
 
@@ -167,18 +184,18 @@ a:is(:link, :visited) {
                 div {
                     display: flex;
                     align-items: center;
-                    justify-content:start;
+                    justify-content: start;
                     margin-block: 30px;
                     cursor: default;
-                    
+
                     img {
                         width: 120px;
                         height: 120px;
-                        object-fit: contain;   
+                        object-fit: contain;
                         transition: scale 300ms ease-in-out, filter 300ms ease-in-out;
                     }
-                    
-                    &:hover{
+
+                    &:hover {
                         img {
                             scale: 110%;
                             filter: drop-shadow(0 0 30px var(--shadow));
@@ -195,14 +212,64 @@ a:is(:link, :visited) {
             }
         }
 
+        #performance {
+            div .project {
+                margin-top: 30px;
+
+                div {
+                    width: 100%;
+                    margin-bottom: 30px;
+
+                    h4 {
+                        margin-bottom: 18px;
+                    }
+
+                    .project-img {
+                        width: inherit;
+                        height: max-content;
+                        object-fit: cover;
+                        transition: scale 300ms ease-in-out;
+                        border-radius: 12px;
+
+                        &:hover {
+                            scale: 90%;
+                        }
+                    }
+
+                    .project-name {
+                        margin-top: 12px;
+                        .highlight {
+                            color: var(--primary);
+                        }
+                    }
+
+                    .project-name,
+                    .project-details,
+                    .link-of-website {
+                        font-size: 15px;
+                    }
+
+                    .link-of-website a {
+                        transition: color 300ms ease-in-out;
+                        margin-left: 4px;
+
+                        &:hover {
+                            color: var(--primary);
+                        }
+                    }
+                }
+            }
+        }
+
         #contact {
             div {
-                &:nth-child(3){
+                &:nth-child(3) {
+                    line-height: 40px;
                     p a {
                         color: black;
                         transition: color 300ms ease-in-out;
 
-                        &:hover{
+                        &:hover {
                             color: var(--primary);
                         }
                     }
@@ -212,14 +279,14 @@ a:is(:link, :visited) {
     }
 }
 
-span {
+.highlight {
     font-weight: bold;
 }
 
 #active {
     background: var(--primary);
 
-    > a {
+    >a {
         color: white;
     }
 }

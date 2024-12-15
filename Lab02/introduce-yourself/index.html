@@ -23,7 +23,7 @@
         <aside class="side-bar">
             <div class="user-profile">
                 <img src="./src/assets/imgs/img.webp" alt="user-img" />
-                <div class="user-details">
+                <div class="user-name">
                     <h2>Warin Saipanya</h2>
                     <p>
                         < Fronend Developer />
@@ -57,20 +57,23 @@
             <div id="about">
                 <h2>#เกี่ยวกับฉัน</h2>
                 <div class="line"></div>
-                <div>
-                    <p>ชื่อ: นาย วรินทร์ สายปัญญา</p>
-                    <p>รหัสนิสิต: 6630250435</p>
-                    <p>ชื่อเรียก: วรินทร์</p>
-                    <p>ชื่อเล่น: เอก</p>
-                    <p>อายุ: 20 ปี</p>
-                    <p>เกิดปี: ค.ศ. 2004</p>
-                    <p>
-                        ปัจจุบัน: กำลังศึกษาอยู่ที่ มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา
-                    </p>
-                    <p>
-                        อนาคต: อาชีพที่อยากทำงานในอนาคตคคือ อยากเป็น
-                        <span>Full Stack Developer</span>
-                    </p>
+                <div class="user-details">
+                    <div class="user-info">
+                        <p>ชื่อ: นาย วรินทร์ สายปัญญา</p>
+                        <p>รหัสนิสิต: 6630250435</p>
+                        <p>ชื่อเรียก: วรินทร์</p>
+                        <p>ชื่อเล่น: เอก</p>
+                        <p>อายุ: 20 ปี</p>
+                        <p>เกิดปี: ค.ศ. 2004</p>
+                        <p>
+                            ปัจจุบัน: กำลังศึกษาอยู่ที่ มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา
+                        </p>
+                        <p>
+                            อนาคต: อาชีพที่อยากทำงานในอนาคตคคือ อยากเป็น
+                            <span>Full Stack Developer</span>
+                        </p>
+                    </div>
+                    <img src="./src/assets/imgs/img2.jpg" loading="eager" alt="user-img2">
                 </div>
             </div>
 
@@ -125,8 +128,95 @@
                     <p>
                         เวลาว่างชอบเขียนโค้ด, อ่านหนังสือโปรแกรม และ
                         ฝึกฝนพัฒนาเองอยู่ตลอดเวลาโดยเฉพาะเรื่องทักษะการเขียนโปรแกรม
-                        ชอบจะเขียนโค้ดและทำโปรเจคเป็นพิเศษและอัปผลงานไว้ใน <span>Github</span>
+                        ชอบจะเขียนโค้ดและทำโปรเจคเป็นพิเศษและอัปผลงานไว้ใน <span class="highlight">Github</span>
                     </p>
+                </div>
+            </div>
+
+            <div id="performance">
+                <h2>#ผลงาน</h2>
+                <div class="line"></div>
+                <div>
+                    <p>ผลงานเว็บไชต์ที่สร้างขึ้นมาเองคัดมาเฉพาะอันที่น่าสนใจโดยผลงานทั้งหมดอยู่ใน <span
+                            class="highlight">Github</span></p>
+                    <div class="project">
+                        <div class="project-1">
+                            <h4>1. เว็บไซต์แสดงตารางคะแนนพรีเมียร์ลีก</h4>
+                            <img src="./src/assets/imgs/project1.png" alt="project-1" class="project-img"
+                                loading="lazy">
+                            <p class="project-name">ชื่อโปรเจค: <span class="highlight">react-premier-league-table
+                                </span></p>
+                            <p class="project-details">คำอธิบาย: เขียนด้วย React TypeScript ใช้ร่วมกับ Tailwind CSS
+                                โดยมีการยิง API
+                                เพื่อขอข้อมูลนำมาแสดงบนหน้าเว็บ</p>
+                            <span class="link-of-website">ลิ้งค์เว็บไซต์: <a
+                                    href="https://react-premier-league-table.vercel.app/"
+                                    target="_blank">react-premier-league-table.vercel.app</a></span>
+                        </div>
+
+                        <div class="project-2">
+                            <h4>2. เว็บไซต์แปลงนิพจน์ Prefix และ Postfix</h4>
+                            <img src="./src/assets/imgs/project2.png" alt="project-2" class="project-img"
+                                loading="lazy">
+                            <p class="project-name">ชื่อโปรเจค: <span class="highlight">react-converter </span></p>
+                            <p class="project-details">คำอธิบาย: เขียนด้วย React TypeScript ใช้ร่วมกับ Tailwind CSS
+                                โดยป้อนนิพจน์ที่ต้องการจะแปลง ให้เลือกว่าจะแปลงเป็น Prefix หรือ Postfix
+                                แล้วคลิกที่ปุ่มจะได้ผลลัพธ์ของการแปลงนิพจน์ และ ตารางการแปลงนิพจน์แสดงให้รายละเอียดการทำ
+                            </p>
+                            <span class="link-of-website">ลิ้งค์เว็บไซต์: <a
+                                    href="https://react-converter-nine.vercel.app/"
+                                    target="_blank">react-converter-nine.vercel.app</a></span>
+                        </div>
+
+                        <div class="project-3">
+                            <h4>3. เว็บไซต์แสดงการด์สถานที่น่าท่องเที่ยวทั่วโลก</h4>
+                            <img src="./src/assets/imgs/project3.png" alt="project-3" class="project-img"
+                                loading="lazy">
+                            <p class="project-name">ชื่อโปรเจค: <span class="highlight">react-card </span></p>
+                            <p class="project-details">คำอธิบาย: เขียนด้วย React TypeScript กับ CSS
+                                แสดงการด์สถานที่น่าท่องเที่ยวมา 10 อัน และ พร้อมให้ข้อมูลสถานที่นั้นแบบคร่าวๆ</p>
+                            <span class="link-of-website">ลิ้งค์เว็บไซต์: <a href="https://react-card-phi.vercel.app/"
+                                    target="_blank">react-card-phi.vercel.app</a></span>
+                        </div>
+
+                        <div class="project-4">
+                            <h4>4. เว็บไซต์แสดงอุณหภูมิสภาพอากาศ</h4>
+                            <img src="./src/assets/imgs/project4.png" alt="project-4" class="project-img"
+                                loading="lazy">
+                            <p class="project-name">ชื่อโปรเจค: <span class="highlight">react-weather-app </span></p>
+                            <p class="project-details">คำอธิบาย: เขียนด้วย React TypeScript กับ Tailwind CSS
+                                มีการใช้ API ของ OpenWeather API เพื่อนำข้อมูลสภาพอากาศมาแสดงบนหน้าเว็บ
+                                โดยการค้นหาชื่อเมืองที่เราต้องการแล้วกดปุ่มค้นหาก็จะแสดงข้อมูลสภาพอากาศต่างๆตามเมืองที่เราค้นหา
+                            </p>
+                            <span class="link-of-website">ลิ้งค์เว็บไซต์: <a
+                                    href="https://65713599cc7b9525c8abb7c3--gentle-raindrop-55eae7.netlify.app/"
+                                    target="_blank">gentle-raindrop-55eae7.netlify.app</a></span>
+                        </div>
+
+                        <div class="project-5">
+                            <h4>5. เว็บไซต์เครื่องคิดเลข</h4>
+                            <img src="./src/assets/imgs/project5.png" alt="project-5" class="project-img"
+                                loading="lazy">
+                            <p class="project-name">ชื่อโปรเจค: <span class="highlight">react-calculator </span></p>
+                            <p class="project-details">คำอธิบาย: เขียนด้วย React TypeScript กับ Tailwind CSS
+                                คำนวณได้เหมือนเครื่องคิดเลขทั่วๆไป เว็บไซต์รองรับการแสดงผลแบบ responsive </p>
+                            <span class="link-of-website">ลิ้งค์เว็บไซต์: <a
+                                    href="https://calculator-sage-one.vercel.app/"
+                                    target="_blank">calculator-sage-one.vercel.app</a></span>
+                        </div>
+
+                        <div class="project-6">
+                            <h4>6. เว็บไซต์แสดง sidebar</h4>
+                            <img src="./src/assets/imgs/project6.png" alt="project-6" class="project-img"
+                                loading="lazy">
+                            <p class="project-name">ชื่อโปรเจค: <span class="highlight">react-sidebar2 </span></p>
+                            <p class="project-details">คำอธิบาย: เขียนด้วย React TypeScript กับ Tailwind CSS
+                                แสดงแถบ sidebar โดยการ clone (ไม่ได้ copy code เป็นเพียงการมองจาก UI
+                                ที่เห็นแล้วเขียนโค้ดเป็นของตัวเองทั้งหมด) มาจากคลิปๆนึงที่ดู</p>
+                            <span class="link-of-website">ลิ้งค์เว็บไซต์: <a href="https://react-sidebar2.vercel.app/"
+                                    target="_blank">react-sidebar2.vercel.app</a></span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
