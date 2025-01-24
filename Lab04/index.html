@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JavaScript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <section id="theInput" class="container">
+        <h1 class="display-3 mt-5">JavaScript</h1>
+        <form action="">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="form-floating">
+                        <input type="text" id="std_name" class="form-control" >
+                        <label for="std_name" class="form-label">ชื่อนิสิต</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-2 ">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="form-floating">
+                        <input type="text" id="txt_copy" class="form-control" readonly >
+                        <label for="txt_copy" class="form-label">Copy Code</label>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <input type="checkbox" id="chk_enable" >
+                    <label for="chk_enable">enable</label>
+                </div>
+            </div>
+            <p id="p_ans" ></p>
+            <div class="row mt-2 ">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <!-- button Group -->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success">
+                        เขียว
+                        </button>
+                        <button type="button" class="btn btn-danger" >
+                        แดง
+                        </button>
+                        <button type="button" class="btn btn-warning">
+                        เหลือง
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                        ดำ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</body>
+</html>
