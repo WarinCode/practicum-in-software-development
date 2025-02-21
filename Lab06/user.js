@@ -7,7 +7,7 @@ async function readJson() {
     try {
         const res = await fetch(url);
         const users = await res.json();
-    
+
         for (const user of users) {
             htmlText += `
             <div class="card m-4 border border-2 rounded-3 shadow p-2" style="width: 250px; height: max-content;">
@@ -23,7 +23,7 @@ async function readJson() {
             data.push(user);
         }
         target.innerHTML = htmlText;
-    } catch(e){
+    } catch (e) {
         console.error(e?.message);
     }
 }
