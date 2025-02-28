@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": "65001",
+      "name": "Somchai Sailom",
+      "major": "CS",
+      "yr": 4,
+      "isActive": false
+    },
+    {
+      "id": "65002",
+      "name": "Somying Jingjai",
+      "major": "DS",
+      "yr": 2,
+      "isActive": false
+    },
+    {
+      "id": "65003",
+      "name": "Somsak Rakjing",
+      "major": "EV",
+      "yr": 3,
+      "isActive": false
+    }
+  ]
+}
