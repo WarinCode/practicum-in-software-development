@@ -1,0 +1,41 @@
+{
+  "subject": [
+    {
+      "id": "418123122",
+      "name": "Practicum of software development",
+      "yr": 2024,
+      "sem": 2,
+      "seat": 60
+    }
+  ],
+  "students": [
+    {
+      "id": "65001",
+      "name": "Somchai Sailom",
+      "major": "CS",
+      "yr": 4,
+      "isActive": false
+    },
+    {
+      "id": "65002",
+      "name": "Somying Jingjai",
+      "major": "DS",
+      "yr": 2,
+      "isActive": false
+    },
+    {
+      "id": "65003",
+      "name": "Somsak Rakjing",
+      "major": "EV",
+      "yr": 3,
+      "isActive": false
+    },
+    {
+      "id": "65004",
+      "name": "Somsak Rakjing",
+      "major": "CS",
+      "yr": "5",
+      "isActive": false
+    }
+  ]
+}
